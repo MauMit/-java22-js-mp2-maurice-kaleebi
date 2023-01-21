@@ -35,8 +35,8 @@ userNameSubmitButton.addEventListener('click', event => {
         const textFromInput = usernameInput.value;
         const usernameH1 = document.createElement('h1');
         usernameH1.innerText = `Welcome ${textFromInput}`;
-        usernameH1.style.textShadow = '2px 2px blue';
-        usernameH1.style.marginLeft = '500px'
+        usernameH1.style.textShadow = '2px 2px red';
+        usernameH1.style.marginLeft = '600px'
         document.body.append(usernameH1);
         const form = document.querySelector("form");
         form.remove();
