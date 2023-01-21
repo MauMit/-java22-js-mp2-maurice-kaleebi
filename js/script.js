@@ -115,7 +115,7 @@ paperButton.addEventListener('click', event => {
 
     let random = Math.floor(Math.random() * arr.length);
 
-    let guess = `${arr[random]}`;
+    let computerGuess = `${arr[random]}`;
 
     if (playerWins == 1 || computerWins == 1) {
 
@@ -128,26 +128,26 @@ paperButton.addEventListener('click', event => {
         playerWins = 0;
     }
 
-    if (guess == rock) {
+    if (computerGuess == rock) {
 
         playerScore++;
         winnerOfRoundResultH4.innerText = 'Player Wins';
-        computerChoice.innerText = `Computer selected ${guess}`;
+        computerChoice.innerText = `Computer selected ${computerGuess}`;
         h3[0].innerText = `Player Points: ${playerScore}`;
         h3[0].style.color = 'blue';
 
-    } else if (guess == paper) {
+    } else if (computerGuess == paper) {
 
         winnerOfRoundResultH4.innerText = 'Tie';
-        computerChoice.innerText = `Computer selected ${guess}`;
+        computerChoice.innerText = `Computer selected ${computerGuess}`;
 
 
 
-    } else if (guess == scissors) {
+    } else if (computerGuess == scissors) {
 
         computerScore++;
         winnerOfRoundResultH4.innerText = 'Computer Wins';
-        computerChoice.innerText = `Computer selected ${guess}`;
+        computerChoice.innerText = `Computer selected ${computerGuess}`;
         h3[1].innerText = `Computer Points: ${computerScore}`;
         h3[1].style.color = 'red';
 
